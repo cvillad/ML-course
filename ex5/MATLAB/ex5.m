@@ -84,6 +84,7 @@ pause;
 %  Train linear regression with lambda = 0
 lambda = 0;
 [theta] = trainLinearReg([ones(m, 1) X], y, lambda);
+keyboard;
 
 %  Plot fit over the data
 plot(X, y, 'rx', 'MarkerSize', 10, 'LineWidth', 1.5);
@@ -164,9 +165,9 @@ pause;
 %  lambda to see how the fit and learning curve change.
 %
 
-lambda = 1;
+lambda = 0;
 [theta] = trainLinearReg(X_poly, y, lambda);
-
+keyboard
 % Plot training data and fit
 figure(1);
 plot(X, y, 'rx', 'MarkerSize', 10, 'LineWidth', 1.5);
